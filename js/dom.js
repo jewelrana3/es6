@@ -1,21 +1,23 @@
-document.getElementById('background').addEventListener('click',function(){
-    const friends = document.getElementsByClassName('friended');
-    for(const bondhu of friends){
-        bondhu.style.backgroundColor = 'red';
-    }
-});
+// function add(first,second){
+// console.log(first,second)
+// second = second || 0;
+// // if(second === undefined){
+// //     second = 0;
+// // }
+// const total = first + second;
+// return total;
+// }
 
-document.getElementById('two').addEventListener('click',function(){
-    const twoColor = document.getElementById('two-color');
-    twoColor.style.textAlign='center';
-});
+// function add(first,second =0){
+//     const total = first + second;
+//     return total;
+// }
+// const result = add(12,5);
+// console.log(result)
 
-document.getElementById('new-btn').addEventListener('click',function(){
-    const containerDiv = document.getElementById('frends');
-    const addBtn = document.createElement('div');
-    addBtn.innerHTML=`
-    <h3>add a new freinds</h3>
-    <p>this is a frends sercircle</p>
-    `
-    containerDiv.appendChild(addBtn)
-})
+function add(first,last='name'){
+    const total = first + ' ' + last;
+    return total
+}
+const ponit = add('juyel')
+console.log(ponit)
